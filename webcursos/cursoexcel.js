@@ -61,7 +61,7 @@ var video = ["/",
 
 var externalScript   = document.createElement("script");
 externalScript.type  = "text/javascript";
-externalScript.setAttribute('async',"");
+externalScript.setAttribute('async',"async");
 externalScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 document.getElementById('adsContenedor').appendChild(externalScript);
 
