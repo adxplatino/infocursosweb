@@ -57,7 +57,7 @@ var video = ["/",
 "https://drive.google.com/file/d/1OUNEx6R_PId86XrPUWqwMuyW9xlKS1GF/preview",
 "https://drive.google.com/file/d/153LtCVSZDwKZ2bMBw-P1efkzqbxfzj2Z/preview"];
 
- function ads(){
+function ads(){
 
 var externalScript   = document.createElement("script");
 externalScript.type  = "text/javascript";
