@@ -65,16 +65,14 @@ externalScript.setAttribute('async',"");
 externalScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 document.getElementById('adsContenedor').appendChild(externalScript);
 
-var comment = document.createComment(" infocursosweb_adap_modal ");
+var comment = document.createComment(" infocursosweb_modal ");
 document.getElementById('adsContenedor').appendChild(comment);
 
 var ins   = document.createElement("ins");
 ins.setAttribute('class','adsbygoogle');
-ins.setAttribute('style','display:block');
+ins.setAttribute('style','display:inline-block;width:300px;height:250px');
 ins.setAttribute('data-ad-client','ca-pub-6799779205978679');
 ins.setAttribute('data-ad-slot','8107674249');
-ins.setAttribute('data-ad-format','auto');
-
 document.getElementById('adsContenedor').appendChild(ins);
 
 var inlineScript   = document.createElement("script");
