@@ -58,17 +58,26 @@ var video = ["/",
 "https://drive.google.com/file/d/153LtCVSZDwKZ2bMBw-P1efkzqbxfzj2Z/preview"];
 
 function ads(){
-
 var externalScript   = document.createElement("script");
 externalScript.type  = "text/javascript";
 externalScript.setAttribute('async',"");
-externalScript.setAttribute('data-ad-client','ca-pub-6799779205978679');
 externalScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 document.getElementById('adsContenedor').appendChild(externalScript);
 
+var comment = document.createComment(" infocursosweb_modal ");
+document.getElementById('adsContenedor').appendChild(comment);
+
+var ins   = document.createElement("ins");
+ins.setAttribute('class','adsbygoogle');
+ins.setAttribute('style','display:inline-block;width:300px;height:250px');
+ins.setAttribute('data-ad-client','ca-pub-6799779205978679');
+ins.setAttribute('data-ad-slot','8107674249');
+document.getElementById('adsContenedor').appendChild(ins);
+
 var inlineScript   = document.createElement("script");
-inlineScript.type  = "text/javascript"; 
-document.getElementById('adsContenedor').appendChild(inlineScript);
+inlineScript.type  = "text/javascript";
+inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'  
+document.getElementById('adsContenedor').appendChild(inlineScript); 
 }
 
 var titulomodal = document.getElementById("titulomodal");
